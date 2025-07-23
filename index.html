@@ -21,47 +21,23 @@
       color: #FFF;
       scroll-behavior: smooth;
     }
-.section-title-glass {
+
+    nav {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 0.75rem 1.5rem;
-  margin: 0 auto 2rem auto;
-  width: fit-content;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  position: relative;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.section-title-glass h2 {
-  margin: 0;
-  font-size: 2rem;
-  color: #fff;
-  letter-spacing: 1px;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
-
-.section-title-glass::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0));
-  border-radius: 12px;
-  z-index: -1;
-}
-
-    nav {
-      background-color: #ffffff;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
 
     nav .logo {
       font-weight: bold;
@@ -193,27 +169,14 @@
 </head>
 <body>
 
-<section id="about">
-  <div class="section-title-glass">
-    <h2>About Me</h2>
-  </div>
-  ...
-</section>
-
-<section id="projects">
-  <div class="section-title-glass">
-    <h2>Projects</h2>
-  </div>
-  ...
-</section>
-
-<section id="contact">
-  <div class="section-title-glass">
-    <h2>Contact</h2>
-  </div>
-  ...
-</section>
-
+  <nav>
+    <div class="logo">Ziella</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <header>
     <h1>Hi, I'm Ziella</h1>
