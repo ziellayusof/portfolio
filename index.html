@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+
   <style>
     * {
       margin: 0;
@@ -14,8 +17,8 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #FFF;
       scroll-behavior: smooth;
     }
 
@@ -77,7 +80,7 @@
 
     section {
       padding: 4rem 2rem;
-      max-width: 1000px;
+      width: fit-content;
       margin: auto;
     }
 
@@ -102,14 +105,27 @@
     }
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #007acc;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #007acc;
+    }
+    
+    h3 {
+    color: #000;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 17px;
+    padding: 10px;
+    letter-spacing: 1.1px;
+    }
+    p {
+    font-size: 22px;
+    line-height: 1.5em;
     }
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
 
@@ -163,7 +179,7 @@
   </header>
 
   <section id="about">
-    <img src="https://via.placeholder.com/200" alt="Profile Picture">
+    <img src="https://localhost/practice-space/portfolio/images/profile-dp.png" alt="Profile Picture">
     <div class="text">
       <h2>About Me</h2>
       <p>Hello! I'm a self-taught developer who enjoys turning designs into functional, responsive websites. I love working with HTML, CSS, and JavaScript, and am currently learning React and WordPress customization.</p>
@@ -173,18 +189,49 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects">
-      <!-- Repeat 9 project cards -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
-        <h3>Project 1</h3>
-        <a href="https://example.com" target="_blank">View Project →</a>
-      </div>
+    <!-- Repeat 9 project cards -->
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-aionev.png" alt="Project Screenshot">
+    <h3>AION EV</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
 
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
-        <h3>Project 2</h3>
-        <a href="https://example.com" target="_blank">View Project →</a>
-      </div>
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-tcat.png" alt="Project Screenshot">
+    <h3>TC AUTO TOOLING</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-gac.png" alt="Project Screenshot">
+    <h3>GAC MOTOR</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
+
+
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-goinsuran.png" alt="Project Screenshot">
+    <h3>GOINSURAN</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-tccr.png" alt="Project Screenshot">
+    <h3>TCCR</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-tcmh.png" alt="Project Screenshot">
+    <h3>Tan Chong Motor Holdings</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+    <img src="https://localhost/practice-space/portfolio/images/thumbnail-tcmsp.png" alt="Project Screenshot">
+    <h3>TCMSP</h3>
+    <a href="#" target="_blank">View Project →</a>
+    </div>
 
       <!-- Add 7 more project blocks like above -->
     </div>
