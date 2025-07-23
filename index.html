@@ -166,6 +166,25 @@
       padding: 2rem;
       color: #777;
     }
+    /** Animation Typing **/
+    .typewriter {
+      font-size: 2.8em;
+      font-family: 'Montserrat';
+      border-right: 2px solid #00bfff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch } /* Adjust based on character count */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
   </style>
 </head>
 <body>
@@ -188,6 +207,7 @@
     <img src="https://ziellayusof.github.io/portfolio/images/profile-dp.png" alt="Profile Picture">
     <div class="text">
       <h2>About Me</h2>
+       <div class="typewriter">I am a Front-End Developer</div>
       <p>Hello! I'm a self-taught developer who enjoys turning designs into functional, responsive websites. I love working with HTML, CSS, and JavaScript, and am currently learning React and WordPress customization.</p>
     </div>
   </section>
