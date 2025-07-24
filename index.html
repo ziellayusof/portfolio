@@ -188,18 +188,124 @@
     img.icon-top {
     width: 25%;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .typewriter {
+    font-size: 1.5em;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about .text {
+    max-width: 100%;
+  }
+
+  img.icon-top {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav .logo {
+    font-size: 1.2rem;
+  }
+}
+/* Hide toggle by default */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    z-index: 101;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 1rem 0;
+    border-radius: 0 0 12px 12px;
+    z-index: 100;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 0.5rem 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+}
+
+    
   </style>
 </head>
 <body>
 
-  <nav>
-    <div class="logo">Ziella</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <div class="logo">Ziella</div>
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <header>
     <h1>Hi, I'm Ziella</h1>
