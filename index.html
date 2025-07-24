@@ -188,6 +188,16 @@
     img.icon-top {
     width: 25%;
 }
+  @media (max-width: 1024px) {
+  section {
+    width: 90%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -225,7 +235,6 @@
     width: 50%;
   }
 }
-
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.8rem;
